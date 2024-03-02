@@ -9,7 +9,7 @@
     body{
         background-color: cornflowerblue;
     }
-     .input-container{
+     #input-container{
         top: 500px;
         margin-left: 500px;
         width: 500px;
@@ -18,13 +18,13 @@
         margin-top: 200px;
         padding: 30px;
     }
-    .inputdate{
+    #inputdate{
         padding: 10px;
         margin-left: 100px;
         border-radius: 10px;
         
     }
-    .but{
+    #but{
         padding: 10px;
         margin-left: 50px;
         border-radius: 10px;
@@ -36,37 +36,45 @@
         justify-content: center;
         gap: 50px;
     }
-    .outer .ouet-1{
+     #ouet-1{
         background-color: rgb(237, 48, 48);
        width: 70px;
        height: 70px;
        margin-top: 50px;
     }
-    .ouet-1 span{
+    #ouet-2 {
         margin-left: 30px;
+        background-color: rgb(237, 48, 48);
+       width: 70px;
+       height: 70px;
+       margin-top: 50px;
     }
-    .ouet-1 p{
+    #ouet-3 {
         margin-left: 20px;
+        background-color: rgb(237, 48, 48);
+       width: 70px;
+       height: 70px;
+       margin-top: 50px;
     }
    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="input-container">
-            <input type="date" class="inputdate">
-            <button class="but">Calculater</button>
+    <div id="container">
+        <div id="input-container">
+            <input type="date" id="inputdate">
+            <button id="but">Calculater</button>
         </div>
         <div class="outer">
-            <div class="ouet-1">
+            <div id="ouet-1">
                 <span>-</span>
                 <p>year</p>
             </div>
-            <div class="ouet-1">
+            <div id="ouet-2">
                 <span>-</span>
                 <p>month</p>
             </div>
-            <div class="ouet-1">
+            <div id="ouet-3">
                 <span>-</span>
                 <p>day</p>
             </div>
