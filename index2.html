@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div  id="presstext" style="height: 100px; width: 500px; border: 2px solid blue; margin-left: 500px; margin-top: 300px; box-shadow: 10px 5px 5px rgb(14, 14, 14);cursor: pointer; font-size: x-large; padding: 20px;">
+   
+    </div>
+ <script>
+    window.addEventListener('keypress',(e)=>{
+        const disp=document.getElementById('presstext')
+        console.log(e);
+        disp.innerHTML=`your presses ${e.key} which has ascii value of ${e.keyCode}`
+    })
+ </script>
+</body>
+</html>

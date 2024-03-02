@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+        background-color: cornflowerblue;
+    }
+     .input-container{
+        top: 500px;
+        margin-left: 500px;
+        width: 500px;
+        height: 50px;
+        background-color: aqua;
+        margin-top: 200px;
+        padding: 30px;
+    }
+    .inputdate{
+        padding: 10px;
+        margin-left: 100px;
+        border-radius: 10px;
+        
+    }
+    .but{
+        padding: 10px;
+        margin-left: 50px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .outer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+    .outer .ouet-1{
+        background-color: rgb(237, 48, 48);
+       width: 70px;
+       height: 70px;
+       margin-top: 50px;
+    }
+    .ouet-1 span{
+        margin-left: 30px;
+    }
+    .ouet-1 p{
+        margin-left: 20px;
+    }
+   </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-container">
+            <input type="date" class="inputdate">
+            <button class="but">Calculater</button>
+        </div>
+        <div class="outer">
+            <div class="ouet-1">
+                <span>-</span>
+                <p>year</p>
+            </div>
+            <div class="ouet-1">
+                <span>-</span>
+                <p>month</p>
+            </div>
+            <div class="ouet-1">
+                <span>-</span>
+                <p>day</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
