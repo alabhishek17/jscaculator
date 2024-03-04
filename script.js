@@ -1,6 +1,6 @@
-let b = document.getElementById('container');
+let b = document.getElementById('button-cal');
 b.addEventListener('click', () => {
-    let a = document.getElementById('inputdate');
+    let a = document.getElementById('input-data');
     let b = a.value
     let sep = b.split("-");
      console.log(sep);
@@ -45,7 +45,7 @@ b.addEventListener('click', () => {
     // console.log(year);
   
 
-    let yeardisplay=document.getElementById('ouet-1');
+    let yeardisplay=document.getElementById('year');
     if(year<0){
         
         yeardisplay.innerText="0";
@@ -53,9 +53,9 @@ b.addEventListener('click', () => {
     else{
     yeardisplay.innerText=year;
     }
-    let monthDisplay=document.getElementById('ouet-2')
+    let monthDisplay=document.getElementById('month')
     monthDisplay.innerText=month;
-    let dateDisplay=document.getElementById('ouet-3')
+    let dateDisplay=document.getElementById('days')
     dateDisplay.innerText=dates;
     
 

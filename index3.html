@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: none;
+           outline: none;
+        }
+        body{
+            background-color: aqua;
+        }
+        #container{
+           border: none;
+           outline: none;
+            position: absolute;
+            top: 50%;
+            left: 40%;
+        }
+        #input-container{
+           background-color: rgb(19, 122, 211);
+           padding: 2.3rem 2.4rem;
+           box-shadow: 10px 5px 5px;
+           margin-bottom: 3.12rem;
+           display: grid;
+           grid-template-columns: 9fr 3fr;
+           gap:1rem;
+           border-radius: 1rem;
+        }
+        #input-data,#button-cal{
+            font-weight: 500px;
+            border-radius: 0.32rem;
+            
+        }
+        #input-data{
+            padding: .7rem;
+            font-size: 0.88rem;
+            background-color: blanchedalmond;
+        }
+        #button-cal{
+            background-color: chartreuse;
+            padding: .7rem;
+        }
+        #output-container{
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+        }
+        #output-container div{
+            background-color: beige;
+            height: 5rem;
+            width: 6rem;
+            border-radius: .5rem;
+            display: grid;
+            place-items: center;
+            box-shadow: 10px 5px 5px;
+        }
+        span{
+            font-size: 1.87rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 0.87rem;
+            color: rgb(113, 112, 110);
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="input-container">
+            <input type="date" id="input-data">
+            <button id="button-cal">calculator</button>
+        </div>
+        <div id="output-container">
+            <div>
+                <span id="year">-</span>
+                <p>year</p>
+            </div>
+            <div>
+                <span id="month">-</span>
+                <p>month</p>
+            </div>
+            <div>
+                <span id="days">-</span>
+                <p>days</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
